@@ -379,7 +379,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
               <div className="flex items-center justify-between text-[11px] font-mono text-blueprint-muted px-1">
                 <div className="flex items-center gap-2">
                   <span className={`font-semibold ${isUser ? 'text-blueprint-cobalt font-mono' : 'text-blueprint-brass'}`}>
-                    {isUser ? 'Student' : 'CampusLore'}
+                    {isUser ? 'Student' : 'CampusVault'}
                   </span>
                   {!isUser && msg.auto_detected_week && msg.detected_topic && (
                     <span className="text-blueprint-muted">

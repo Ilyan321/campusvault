@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           
           <span className="font-semibold text-xs sm:text-sm tracking-tight text-blueprint-primary">
-            CampusLore
+            CampusVault
           </span>
           <span className="text-[11px] text-blueprint-muted hidden md:inline-flex items-center gap-1.5 border-l border-blueprint-border pl-2 font-mono">
             <span className="w-1.5 h-1.5 rounded-full bg-blueprint-emerald animate-pulse" />

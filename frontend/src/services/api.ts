@@ -1,6 +1,6 @@
 import { Course, AnalysisResult, NoteSource, WeekNoteInfo } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : 'https://campuslore-backend.onrender.com');
+const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : 'https://campusvault-backend.onrender.com');
 
 export const DEFAULT_COURSES: Course[] = [
   {

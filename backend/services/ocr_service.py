@@ -4,7 +4,7 @@ import logging
 from typing import Optional
 from config import GEMINI_API_KEY, GEMINI_OCR_MODEL
 
-logger = logging.getLogger("campuslore.ocr")
+logger = logging.getLogger("campusvault.ocr")
 
 _genai_client = None
 

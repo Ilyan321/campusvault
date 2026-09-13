@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-batchmate.ilyankhan.tech-0284c7?style=for-the-badge&logo=vercel&logoColor=white)](https://batchmate.ilyankhan.tech)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-campusvault.ilyankhan.tech-0284c7?style=for-the-badge&logo=vercel&logoColor=white)](https://frontend-nine-tau-84.vercel.app)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React%2018-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![PostgreSQL + pgvector](https://img.shields.io/badge/PostgreSQL-pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
@@ -13,7 +13,7 @@
 
 *Built for the HEC × Pak Angels GenAI & Agentic RAG Hackathon 2026*
 
-[Explore Live Workstation](https://batchmate.ilyankhan.tech) · [View API Docs](https://campuslore-backend.onrender.com/docs) · [Presentation Script](docs/script.txt)
+[Explore Live Workstation](https://frontend-nine-tau-84.vercel.app) · [View API Docs](https://campusvault-backend.onrender.com/docs) · [Presentation Script](docs/script.txt)
 
 </div>
 
@@ -46,10 +46,10 @@ When students query standard models like ChatGPT, they encounter:
 
 <div align="center">
 
-| Grounded RAG Answer with KaTeX | AST Ingestion & Peer Upload |
-|:---:|:---:|
-| ![Grounded Answer](docs/screenshots/02_desktop_grounded_answer.png) | ![Upload Modal](docs/screenshots/04_desktop_upload_modal.png) |
-| *Step-by-step binary math with KaTeX LaTeX rendering and route verification tags.* | *Multi-format ingestion (PDF, C++, Python, Markdown) with automated AST chunking.* |
+| Grounded RAG Answer with KaTeX | Source Material Inspector | AST Ingestion & Peer Upload |
+|:---:|:---:|:---:|
+| ![Grounded Answer](docs/screenshots/02_desktop_grounded_answer.png) | ![Source Inspector](docs/screenshots/03_desktop_source_inspector.png) | ![Upload Modal](docs/screenshots/04_desktop_upload_modal.png) |
+| *Step-by-step binary math with KaTeX LaTeX rendering and route verification tags.* | *Traceable peer provenance with similarity scores, week tags, and original text.* | *Multi-format ingestion (PDF, C++, Python, Markdown) with automated AST chunking.* |
 
 </div>
 
@@ -261,6 +261,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-**[CampusVault](https://batchmate.ilyankhan.tech) — Empowering Engineering Students with Grounded AI.**
+**[CampusVault](https://frontend-nine-tau-84.vercel.app) — Empowering Engineering Students with Grounded AI.**
 
 </div>

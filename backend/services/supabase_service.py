@@ -3,7 +3,7 @@ from typing import List, Dict, Any, Optional
 from supabase import create_client, Client
 from config import SUPABASE_URL, SUPABASE_SERVICE_KEY
 
-logger = logging.getLogger("campuslore.supabase")
+logger = logging.getLogger("campusvault.supabase")
 
 _client: Optional[Client] = None
 

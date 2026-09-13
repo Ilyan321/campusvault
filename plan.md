@@ -1,6 +1,6 @@
-# CampusLore RAG & Backend Implementation Plan
+# CampusVault RAG & Backend Implementation Plan
 
-> **Goal:** Build a hyper-reliable, bug-proof RAG backend for CampusLore and deploy it successfully on free-tier infrastructure, specifically avoiding common Out-Of-Memory (OOM) and timeout errors on Render.
+> **Goal:** Build a hyper-reliable, bug-proof RAG backend for CampusVault and deploy it successfully on free-tier infrastructure, specifically avoiding common Out-Of-Memory (OOM) and timeout errors on Render.
 
 ---
 
@@ -155,7 +155,7 @@ To avoid the Render UI completely and ensure the build doesn't crash, we use a `
 ```yaml
 services:
   - type: web
-    name: campuslore-backend
+    name: campusvault-backend
     env: python
     region: oregon
     plan: free
@@ -196,11 +196,11 @@ Connect the GitHub repo to Render, and Render will automatically read `render.ya
 
 ## ⚫ Phase 5: Frontend Sync via Vercel CLI
 
-Once the backend URL is live on Render (e.g., `https://campuslore-api.onrender.com`), we link the React UI.
+Once the backend URL is live on Render (e.g., `https://campusvault-api.onrender.com`), we link the React UI.
 
 **1. Create the React app**
 ```bash
-npm create vite@latest campuslore-ui -- --template react-ts
+npm create vite@latest campusvault-ui -- --template react-ts
 ```
 
 **2. Deploy via Vercel CLI**

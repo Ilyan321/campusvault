@@ -24,3 +24,6 @@ ENV/
 .DS_Store
 .vscode/
 .idea/
+*.log
+*.out
+nohup.out

@@ -3,7 +3,7 @@ from typing import List, Union
 from fastembed import TextEmbedding
 from config import EMBEDDING_MODEL_NAME
 
-logger = logging.getLogger("campuslore.embedder")
+logger = logging.getLogger("campusvault.embedder")
 
 _model: Union[TextEmbedding, None] = None
 

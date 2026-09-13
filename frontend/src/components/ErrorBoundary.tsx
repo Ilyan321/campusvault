@@ -26,8 +26,8 @@ export class ErrorBoundary extends Component<Props, State> {
 
   private handleReset = () => {
     try {
-      localStorage.removeItem('campuslore_chat_sessions');
-      localStorage.removeItem('campuslore_active_session_id');
+      localStorage.removeItem('campusvault_chat_sessions');
+      localStorage.removeItem('campusvault_active_session_id');
     } catch {
       // ignore
     }

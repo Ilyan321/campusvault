@@ -6,7 +6,7 @@ from config import GROQ_API_KEY, GROQ_CHAT_MODEL
 from services.embedder_service import get_embedding
 from services.supabase_service import search_similar_notes
 
-logger = logging.getLogger("campuslore.rag")
+logger = logging.getLogger("campusvault.rag")
 
 # In-memory query cache for rate-limit protection & instantaneous repeat responses
 _query_cache: Dict[str, Dict[str, Any]] = {}

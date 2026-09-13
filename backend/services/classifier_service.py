@@ -4,7 +4,7 @@ import logging
 from typing import Dict, Any, List, Optional
 from config import GROQ_API_KEY, GROQ_CLASSIFIER_MODEL
 
-logger = logging.getLogger("campuslore.classifier")
+logger = logging.getLogger("campusvault.classifier")
 
 _syllabus_data: Optional[List[Dict[str, Any]]] = None
 

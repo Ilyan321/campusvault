@@ -1,7 +1,7 @@
 import { ChatSession, ChatMessage } from '../types';
 
-const SESSIONS_STORAGE_KEY = 'campuslore_chat_sessions';
-const ACTIVE_SESSION_ID_KEY = 'campuslore_active_session_id';
+const SESSIONS_STORAGE_KEY = 'campusvault_chat_sessions';
+const ACTIVE_SESSION_ID_KEY = 'campusvault_active_session_id';
 
 export function getStoredSessions(): ChatSession[] {
   try {

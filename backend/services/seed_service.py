@@ -4,7 +4,7 @@ from services.embedder_service import get_embeddings_batch
 from services.supabase_service import insert_note_chunks, get_supabase_client
 from utils.chunker import semantic_chunk
 
-logger = logging.getLogger("campuslore.seed")
+logger = logging.getLogger("campusvault.seed")
 
 SEED_NOTES = [
     # --- 1. CSE-212: Data Structures & Algorithms ---

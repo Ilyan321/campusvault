@@ -8,7 +8,7 @@ from services.embedder_service import get_embedding, get_embeddings_batch
 from services.supabase_service import search_similar_notes
 from services.classifier_service import load_syllabus, heuristic_classify
 
-logger = logging.getLogger("campuslore.agentic_rag")
+logger = logging.getLogger("campusvault.agentic_rag")
 
 def clean_llm_text(text: str) -> str:
     """Strips <think> tags, unclosed think blocks, or internal reasoning prefixes."""
@@ -67,7 +67,7 @@ def analyze_and_expand_query(
         client = Groq(api_key=GROQ_API_KEY)
         
         system_prompt = (
-            "You are CampusLore's intelligent academic router and query planner.\n"
+            "You are CampusVault's intelligent academic router and query planner.\n"
             "Analyze the student's question against the university syllabus catalog and recent conversation history.\n\n"
             "RULES:\n"
             "1. If the question matches an engineering/CS syllabus topic (e.g. data structures, subnetting, recursion, OS, graphs):\n"
@@ -98,7 +98,7 @@ def analyze_and_expand_query(
             recent_turns = history[-4:] # Last 2 exchanges
             formatted_turns = []
             for h in recent_turns:
-                role = "Student" if h.get("role") == "user" else "CampusLore"
+                role = "Student" if h.get("role") == "user" else "CampusVault"
                 formatted_turns.append(f"{role}: {h.get('content', '')[:200]}")
             history_context = "\nRecent Conversation History:\n" + "\n".join(formatted_turns) + "\n"
 
@@ -280,7 +280,7 @@ def build_bilingual_synthesis_prompt(
         context_str = "No specific senior peer notes needed or found for this question."
 
     system_prompt = (
-        "You are CampusLore, an advanced, developer-grade academic assistant and engineering mentor.\n"
+        "You are CampusVault, an advanced, developer-grade academic assistant and engineering mentor.\n"
         "Your mission is to deliver clear, precise, and directly helpful answers.\n\n"
         "RESPONSE GUIDELINES:\n"
         "- If the student asks a general question, general knowledge, or basic concept: Answer it directly, informatively, and politely. Never say 'your question is unrelated to course XYZ'.\n"
@@ -304,7 +304,7 @@ def build_bilingual_synthesis_prompt(
         recent = history[-4:]
         h_lines = []
         for turn in recent:
-            r = "Student" if turn.get("role") == "user" else "CampusLore"
+            r = "Student" if turn.get("role") == "user" else "CampusVault"
             h_lines.append(f"{r}: {turn.get('content', '')}")
         history_str = "PREVIOUS CONVERSATION CONTEXT:\n" + "\n".join(h_lines) + "\n\n"
 
@@ -350,7 +350,7 @@ def run_agentic_rag(
     sys_prompt, user_prompt = build_bilingual_synthesis_prompt(query, plan, graded_sources, detected_course, history=history)
     
     if not GROQ_API_KEY:
-        answer = f"**CampusLore** received question: '{query}'."
+        answer = f"**CampusVault** received question: '{query}'."
     else:
         try:
             from groq import Groq

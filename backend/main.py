@@ -15,10 +15,10 @@ from services.agentic_rag_service import run_agentic_rag, stream_agentic_rag
 from utils.chunker import semantic_chunk
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
-logger = logging.getLogger("campuslore.api")
+logger = logging.getLogger("campusvault.api")
 
 app = FastAPI(
-    title="CampusLore RAG API",
+    title="CampusVault RAG API",
     description="Hyper-reliable, low-memory RAG backend for university engineering notes",
     version="1.0.0"
 )
@@ -51,7 +51,7 @@ class QueryRequest(BaseModel):
 @app.get("/")
 def root():
     return {
-        "app": "CampusLore API",
+        "app": "CampusVault API",
         "status": "online",
         "version": "1.0.0",
         "docs": "/docs"

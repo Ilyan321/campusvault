@@ -1,0 +1,124 @@
+===================================================================
+                  CAMPUSVAULT HACKATHON PITCH SCRIPT
+                     (Specially Prepared for Warda)
+===================================================================
+TARGET TIME : ~4 minutes 15 seconds (Max limit is 4:40)
+STYLE       : Easy Roman Urdu + Crisp English Tech Words
+DEPLOYMENT  : https://frontend-nine-tau-84.vercel.app (campusvault.ilyankhan.tech)
+===================================================================
+
+📱 QUICK TIPS FOR WARDA:
+• Relaxed aur confident voice mein parhein.
+• Jab slide change ho, slide number dekh kar agla section start karein.
+• Har slide ke neechay ek choti si visual tip di hai.
+
+
+===================================================================
+SLIDE 1: Title & Team Introduction (⏱️ Time: 0:00 - 0:25)
+===================================================================
+[Tip: Screen par Title slide show karein]
+
+Assalam-o-Alaikum judges! 
+
+Humari team ke members hain: Shahzaib Ali, Ali Hussain, Aqsa Sarfaraz, Arfa Rehman, Zainab Faiz, aur Warda Nadeem.
+
+Aaj hum present kar rahe hain CampusVault — ek production-grade Agentic RAG system jo university engineering students ki exam preparation ke liye design kiya gaya hai. 
+
+Aur ye abhi live deployed hai frontend-nine-tau-84.vercel.app aur campusvault.ilyankhan.tech par.
+
+
+===================================================================
+SLIDE 2: The Exam Preparation Crisis (⏱️ Time: 0:25 - 1:00)
+===================================================================
+[Tip: Left vs Right cards par point karein]
+
+Exams ke dauran students isliye struggle karte hain kyunki jab wo ChatGPT ya generic AI use karte hain, toh models complex formulas aur algorithm traces ko hallucinate kar dete hain. Unka university syllabus ya grading rubrics se koi link nahi hota, aur basic RAG bhi sirf dumb keyword search karta hai.
+
+Doosri taraf, 400 plus pages ki lecture slides, past papers, aur senior notes har semester disorganized WhatsApp groups aur drives mein gum ho jate hain. Students ke paas 3 AM exam panic mein koi verified academic AI nahi hota.
+
+
+===================================================================
+SLIDE 3: Why CampusVault is Agentic RAG (⏱️ Time: 1:00 - 1:40)
+===================================================================
+[Tip: 3 main pillars explain karein]
+
+Is problem ko solve karne ke liye CampusVault basic RAG nahi, balkay true Agentic RAG use karta hai teen main pillars ke sath:
+
+1. Agentic Query Router: Hamara router student ki query ko inspect karke 6 core engineering subjects aur 16-week semester syllabus mein map karta hai, aur best retrieval strategy decide karta hai.
+
+2. Strict Confidence Gate: Humne 0.65 cosine similarity barrier lagaya hai. Agar peer notes mein context na ho, toh system jhoota answer banane ki bajaye saaf disclaimer deta hai: "Operating in General AI Mode."
+
+3. AST-Aware Chunking: Hum character slicing ki bajaye Abstract Syntax Tree use karte hain, taake Python/C++ code functions aur LaTeX math derivations beech mein se cut na hon.
+
+
+===================================================================
+SLIDE 4: Grounding & Math Engine (⏱️ Time: 1:40 - 2:15)
+===================================================================
+[Tip: Citations aur KaTeX math highlights show karein]
+
+Academic accuracy ke liye, CampusVault ke har response ke sath Peer-Grounded Citations aati hain jahan student exact senior note aur confidence percentage dekh sakta hai.
+
+Saath hi, matrices, binary math aur networking equations ke liye humne client-side KaTeX rendering di hai. 
+
+Groq Llama 3.3 70B aur Server-Sent Events ke zariye answer sub-500 millisecond time-to-first-token ke sath live stream hota hai.
+
+
+===================================================================
+SLIDE 5: Full-Stack Technology Matrix (⏱️ Time: 2:15 - 2:45)
+===================================================================
+[Tip: Tech stack table par mouse hover karein]
+
+Hamara full-stack architecture production ready hai:
+
+• Frontend: React, TypeScript, aur Tailwind CSS — jo mobile aur desktop dono par smooth chalta hai.
+• Backend: FastAPI async orchestrator.
+• Inference: Groq Llama 3.3 70B ultra-fast reasoning.
+• Embeddings: FastEmbed ONNX runtime — jo server par locally chalta hai, yani zero GPU cost aur zero external API dependency.
+• Vector DB: PostgreSQL pgvector — jo under 20 milliseconds mein hybrid search deliver karta hai.
+
+
+===================================================================
+SLIDE 6: End-to-End Query Workflow (⏱️ Time: 2:45 - 3:20)
+===================================================================
+[Tip: Step 1 se 4 tak flow explain karein]
+
+Hamara 4-step query workflow bohot simple hai:
+
+• Step 1: Student query bhejta hai; FastAPI Router subject, week aur intent classify karta hai.
+• Step 2: FastEmbed locally 384-dim vector bana kar pgvector se sub-20ms mein search karta hai.
+• Step 3: Confidence Gate check karta hai ke score 0.65 se ooper hai ya nahi.
+• Step 4: Groq Llama 3.3 70B verified citations aur KaTeX math ke sath token-by-token answer stream kar deta hai.
+
+
+===================================================================
+SLIDE 7: Zero-Cost & Scalable Architecture (⏱️ Time: 3:20 - 3:45)
+===================================================================
+[Tip: $0 cost aur low latency highlight karein]
+
+FastEmbed ko direct local ONNX runtime mein run karne se humari embedding API cost bilkul $0 ho gayi hai, aur rate limits ka koi issue nahi rehta.
+
+Ye lightweight architecture CampusVault ko baghair kisi expensive infrastructure ke hazaron students ke liye scale karne ki taqat deta hai.
+
+
+===================================================================
+SLIDE 8: Student & Ingestion Features (⏱️ Time: 3:45 - 4:10)
+===================================================================
+[Tip: 6 subjects aur upload features mention karein]
+
+CampusVault mein 6 engineering subjects ke High-Yield Exam Launchpads, multi-turn chat history, aur multi-format upload pipeline available hai jo PDFs, Markdown, aur C++ files ko AST boundary protection ke sath ingest karti hai.
+
+
+===================================================================
+SLIDE 9: Live Demo & Closing (⏱️ Time: 4:10 - 4:25)
+===================================================================
+[Tip: Live URL aur thanks bol kar end karein]
+
+CampusVault koi prototype nahi, live operational system hai frontend-nine-tau-84.vercel.app aur campusvault.ilyankhan.tech par.
+
+Iska complete interactive live demo hamari demo video mein included hai. 
+
+Bohat shukriya judges, we are now open for your questions!
+
+===================================================================
+                         END OF SCRIPT
+===================================================================

@@ -1,4 +1,4 @@
-name: CampusLore CI/CD Pipeline
+name: CampusVault CI/CD Pipeline
 
 on:
   push:

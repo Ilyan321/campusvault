@@ -1,12 +1,12 @@
-# 🏛️ CampusLore — Architecture, Decisions & Context Record (DECISION.md)
+# 🏛️ CampusVault — Architecture, Decisions & Context Record (DECISION.md)
 
-> **Document Purpose:** Single source of truth for the CampusLore platform. Any AI agent, developer, or evaluator opening a new session can read this document to understand the full context, codebase design, architectural trade-offs, and live production endpoints.
+> **Document Purpose:** Single source of truth for the CampusVault platform. Any AI agent, developer, or evaluator opening a new session can read this document to understand the full context, codebase design, architectural trade-offs, and live production endpoints.
 
 ---
 
 ## 1. 📌 Executive Summary & Project Context
 
-* **Project Name:** CampusLore
+* **Project Name:** CampusVault
 * **Target Audience:** Engineering & Computer Science undergraduates at Pakistani universities (specifically tailored for **QUEST Nawabshah** and **MUET Jamshoro** syllabus timelines).
 * **Core Problem:** Students struggle with textbook-heavy or generic AI answers that don't match their exact lab practicals, viva exams, or university past paper marking schemes. Furthermore, peer notes and lab implementations shared across WhatsApp groups are lost or unsearchable.
 * **Solution:** A hyper-local, multimodal **Bilingual Agentic RAG** academic assistant that indexes verified senior peer notes, aligns knowledge strictly with semester syllabus weeks, and answers code and theory questions in natural **Roman Urdu & English code-switching**.
@@ -18,10 +18,10 @@
 | Component | Provider / Platform | Production URL / Identifier |
 | :--- | :--- | :--- |
 | **Frontend UI** | Vercel (Vite + React + TS + Tailwind) | [https://frontend-nine-tau-84.vercel.app](https://frontend-nine-tau-84.vercel.app) |
-| **Backend API** | Render Web Service (FastAPI + Python 3.14) | [https://campuslore-backend.onrender.com](https://campuslore-backend.onrender.com) |
-| **API Documentation** | Swagger / OpenAPI | [https://campuslore-backend.onrender.com/docs](https://campuslore-backend.onrender.com/docs) |
+| **Backend API** | Render Web Service (FastAPI + Python 3.14) | [https://campusvault-backend.onrender.com](https://campusvault-backend.onrender.com) |
+| **API Documentation** | Swagger / OpenAPI | [https://campusvault-backend.onrender.com/docs](https://campusvault-backend.onrender.com/docs) |
 | **Vector Database** | Supabase (PostgreSQL + pgvector) | `https://hxvutkqzluggauadxmlb.supabase.co` |
-| **Code Repository** | GitHub (Monorepo) | [https://github.com/Ilyan321/campuslore](https://github.com/Ilyan321/campuslore) |
+| **Code Repository** | GitHub (Monorepo) | [https://github.com/Ilyan321/campusvault](https://github.com/Ilyan321/campusvault) |
 
 ---
 

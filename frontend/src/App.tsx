@@ -70,7 +70,7 @@ export function App() {
       const initialGreeting: ChatMessage = {
         id: 'msg-welcome',
         role: 'assistant',
-        content: `Welcome to CampusLore — Universal Academic Assistant.\n\nAsk any question across your curriculum (e.g., Data Structures, Operating Systems, Computer Networks). You can select a specific syllabus week on the left or type your question directly for autonomous cross-course retrieval.`,
+        content: `Welcome to CampusVault — Universal Academic Assistant.\n\nAsk any question across your curriculum (e.g., Data Structures, Operating Systems, Computer Networks). You can select a specific syllabus week on the left or type your question directly for autonomous cross-course retrieval.`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
       const newSess = createNewSession(null, null, [initialGreeting]);

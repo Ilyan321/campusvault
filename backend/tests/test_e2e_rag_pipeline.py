@@ -40,7 +40,7 @@ def test_full_workflow_ingest_and_query():
     # Ingest confirmation
     confirm_res = client.post("/api/ingest/confirm", json={
         "file_name": "circular_queue_lab.cpp",
-        "file_url": "https://storage.campuslore.internal/uploads/circular_queue_lab.cpp",
+        "file_url": "https://storage.campusvault.internal/uploads/circular_queue_lab.cpp",
         "course_id": "CSE-212",
         "week_number": 5,
         "topic": "Queue Data Structure & Circular Implementations",
